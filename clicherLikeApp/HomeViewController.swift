@@ -114,17 +114,22 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
             PhotoSavingHandler.shared.saveImage(image: image, completionHandler: { (error) in
+                let message: String
                 if error == nil {
-                    let alertView = UIAlertController(title: NSLocalizedString("ToastTitleSavingPhoto", comment: ""),
-                                                      message: NSLocalizedString("ToastMessageSavingPhotoComplete", comment: ""),
-                                                      preferredStyle: .alert)
-                    
-                    picker.present(alertView, animated: true, completion: nil)
-                    
-                    DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1, execute: {
-                        alertView.dismiss(animated: true, completion:nil)
-                    })
+                    message = NSLocalizedString("ToastMessageSavingPhotoComplete", comment: "")
+                } else {
+                    message = NSLocalizedString("ToastMessageSavingPhotoError", comment: "")
                 }
+                
+                let alertView = UIAlertController(title: NSLocalizedString("ToastTitleSavingPhoto", comment: ""),
+                                                  message: message,
+                                                  preferredStyle: .alert)
+                
+                picker.present(alertView, animated: true, completion: nil)
+                
+                DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1, execute: {
+                    alertView.dismiss(animated: true, completion:nil)
+                })
             })
         }
     }

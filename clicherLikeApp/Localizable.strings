@@ -12,5 +12,7 @@
 "HomeViewControllerNumberPhotos" = "%d photos";
 
 // Toast
-"ToastMessageSavingPhotoComplete" = "La photo a bien été enregistrée dans votre album";
-"ToastTitleSavingPhoto" = "Enregistrement";
+"ToastMessageSavingPhotoComplete" = "The photo has been saved in your album.";
+"ToastTitleSavingPhoto" = "Saving";
+
+"ToastMessageSavingPhotoError" = "An error occured, probably you didn't accept the permissions on the app launch ?";
