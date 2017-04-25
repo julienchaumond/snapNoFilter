@@ -18,6 +18,7 @@ class PhotosViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     private let collectionViewLayout = UICollectionViewFlowLayout()
     private let collectionView: UICollectionView
+    private let loadingView = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.gray)
     
     init(album: PHAssetCollection) {
         self.album = album
@@ -30,10 +31,7 @@ class PhotosViewController: UIViewController, UICollectionViewDelegate, UICollec
         let imageManager = PHImageManager.default()
         
         let albumPhotosFetch = PHAsset.fetchAssets(in: album, options: nil)
-        
-        // Used to count the number of photos retrieved and reload the data only once all the photos are retrieved
-        var retrievedPhotos = 0
-        
+
         albumPhotosFetch.enumerateObjects({ (asset, idx, stop) in
             imageManager.requestImage(for: asset,
                                       targetSize: PHImageManagerMaximumSize,
@@ -42,11 +40,6 @@ class PhotosViewController: UIViewController, UICollectionViewDelegate, UICollec
                                       resultHandler: { (image, _) in
                                         if let image = image {
                                             self.photos.append(image)
-                                            
-                                            retrievedPhotos += 1
-                                            if retrievedPhotos == albumPhotosFetch.count {
-                                                self.collectionView.reloadData()
-                                            }
                                         }
             })
         })
@@ -56,6 +49,8 @@ class PhotosViewController: UIViewController, UICollectionViewDelegate, UICollec
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: cellIdentifier)
+        
+        loadingView.tintColor = Style.keyColor
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -66,6 +61,9 @@ class PhotosViewController: UIViewController, UICollectionViewDelegate, UICollec
         super.viewDidLoad()
 
         view.addSubview(collectionView)
+        view.addSubview(loadingView)
+        
+        loadingView.startAnimating()
         
         let itemWidth = (view.frame.width - Style.horizontalMargin * 2) / 3 - Style.horizontalMargin
         collectionViewLayout.itemSize = CGSize(width: itemWidth, height: itemWidth)
@@ -73,9 +71,17 @@ class PhotosViewController: UIViewController, UICollectionViewDelegate, UICollec
         collectionViewLayout.minimumInteritemSpacing = Style.horizontalMargin
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        // Only reload at this moment to assure the view is visible
+        self.collectionView.reloadData()
+        loadingView.stopAnimating()
+    }
+    
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
+        loadingView.frame = view.bounds
         collectionView.frame = view.bounds
         
         let insets = UIEdgeInsets(top: topLayoutGuide.length + Style.verticalMargin, left: Style.horizontalMargin, bottom: 0, right: Style.horizontalMargin)
