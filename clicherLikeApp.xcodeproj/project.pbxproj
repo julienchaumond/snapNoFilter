@@ -7,16 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22012D6C1EAFC19A00541EA9 /* PhotoOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22012D6B1EAFC19A00541EA9 /* PhotoOverlayView.swift */; };
+		22012D6E1EAFDBDE00541EA9 /* PhotoSavingHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22012D6D1EAFDBDE00541EA9 /* PhotoSavingHandler.swift */; };
+		221E03BF1EAF747700654B4F /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221E03BE1EAF747700654B4F /* Style.swift */; };
+		221E03C11EAF7B6600654B4F /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221E03C01EAF7B6600654B4F /* OnBoardingViewController.swift */; };
+		221E03C31EAF7CBE00654B4F /* OnBoardingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221E03C21EAF7CBE00654B4F /* OnBoardingPage.swift */; };
+		221E03C51EAF8A8100654B4F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221E03C41EAF8A8100654B4F /* HomeViewController.swift */; };
+		221E03C71EAF8AFD00654B4F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 221E03C61EAF8AFD00654B4F /* Localizable.strings */; };
+		223020A71EAF952200F8E6FF /* HomeAlbumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223020A61EAF952200F8E6FF /* HomeAlbumTableViewCell.swift */; };
+		223020A91EAF9CFF00F8E6FF /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223020A81EAF9CFF00F8E6FF /* PhotosViewController.swift */; };
 		2296CFD81EAF708500AD7D63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2296CFD71EAF708500AD7D63 /* AppDelegate.swift */; };
-		2296CFDA1EAF708500AD7D63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2296CFD91EAF708500AD7D63 /* ViewController.swift */; };
 		2296CFDF1EAF708500AD7D63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2296CFDE1EAF708500AD7D63 /* Assets.xcassets */; };
 		2296CFE21EAF708500AD7D63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2296CFE01EAF708500AD7D63 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		22012D6B1EAFC19A00541EA9 /* PhotoOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoOverlayView.swift; sourceTree = "<group>"; };
+		22012D6D1EAFDBDE00541EA9 /* PhotoSavingHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoSavingHandler.swift; sourceTree = "<group>"; };
+		221E03BE1EAF747700654B4F /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		221E03C01EAF7B6600654B4F /* OnBoardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
+		221E03C21EAF7CBE00654B4F /* OnBoardingPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingPage.swift; sourceTree = "<group>"; };
+		221E03C41EAF8A8100654B4F /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		221E03C61EAF8AFD00654B4F /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		221E03C81EAF8C1A00654B4F /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		223020A61EAF952200F8E6FF /* HomeAlbumTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeAlbumTableViewCell.swift; sourceTree = "<group>"; };
+		223020A81EAF9CFF00F8E6FF /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 		2296CFD41EAF708500AD7D63 /* clicherLikeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = clicherLikeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2296CFD71EAF708500AD7D63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2296CFD91EAF708500AD7D63 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2296CFDE1EAF708500AD7D63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2296CFE11EAF708500AD7D63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2296CFE31EAF708500AD7D63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -33,6 +50,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22012D6F1EAFE4EA00541EA9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2296CFDE1EAF708500AD7D63 /* Assets.xcassets */,
+				2296CFE01EAF708500AD7D63 /* LaunchScreen.storyboard */,
+				2296CFE31EAF708500AD7D63 /* Info.plist */,
+				221E03C61EAF8AFD00654B4F /* Localizable.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		2296CFCB1EAF708500AD7D63 = {
 			isa = PBXGroup;
 			children = (
@@ -52,11 +80,16 @@
 		2296CFD61EAF708500AD7D63 /* clicherLikeApp */ = {
 			isa = PBXGroup;
 			children = (
+				22012D6F1EAFE4EA00541EA9 /* Resources */,
 				2296CFD71EAF708500AD7D63 /* AppDelegate.swift */,
-				2296CFD91EAF708500AD7D63 /* ViewController.swift */,
-				2296CFDE1EAF708500AD7D63 /* Assets.xcassets */,
-				2296CFE01EAF708500AD7D63 /* LaunchScreen.storyboard */,
-				2296CFE31EAF708500AD7D63 /* Info.plist */,
+				221E03BE1EAF747700654B4F /* Style.swift */,
+				221E03C01EAF7B6600654B4F /* OnBoardingViewController.swift */,
+				221E03C21EAF7CBE00654B4F /* OnBoardingPage.swift */,
+				221E03C41EAF8A8100654B4F /* HomeViewController.swift */,
+				223020A61EAF952200F8E6FF /* HomeAlbumTableViewCell.swift */,
+				223020A81EAF9CFF00F8E6FF /* PhotosViewController.swift */,
+				22012D6B1EAFC19A00541EA9 /* PhotoOverlayView.swift */,
+				22012D6D1EAFDBDE00541EA9 /* PhotoSavingHandler.swift */,
 			);
 			path = clicherLikeApp;
 			sourceTree = "<group>";
@@ -93,6 +126,7 @@
 				TargetAttributes = {
 					2296CFD31EAF708500AD7D63 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = YE4WPEFUH5;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -121,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2296CFE21EAF708500AD7D63 /* LaunchScreen.storyboard in Resources */,
+				221E03C71EAF8AFD00654B4F /* Localizable.strings in Resources */,
 				2296CFDF1EAF708500AD7D63 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -132,8 +167,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2296CFDA1EAF708500AD7D63 /* ViewController.swift in Sources */,
+				221E03BF1EAF747700654B4F /* Style.swift in Sources */,
+				22012D6E1EAFDBDE00541EA9 /* PhotoSavingHandler.swift in Sources */,
+				223020A91EAF9CFF00F8E6FF /* PhotosViewController.swift in Sources */,
+				223020A71EAF952200F8E6FF /* HomeAlbumTableViewCell.swift in Sources */,
 				2296CFD81EAF708500AD7D63 /* AppDelegate.swift in Sources */,
+				22012D6C1EAFC19A00541EA9 /* PhotoOverlayView.swift in Sources */,
+				221E03C31EAF7CBE00654B4F /* OnBoardingPage.swift in Sources */,
+				221E03C11EAF7B6600654B4F /* OnBoardingViewController.swift in Sources */,
+				221E03C51EAF8A8100654B4F /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +186,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				2296CFE11EAF708500AD7D63 /* Base */,
+				221E03C81EAF8C1A00654B4F /* fr */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -155,6 +198,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -205,6 +249,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -248,10 +293,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = YE4WPEFUH5;
 				INFOPLIST_FILE = clicherLikeApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clicher.clicherLikeApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -260,10 +309,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = YE4WPEFUH5;
 				INFOPLIST_FILE = clicherLikeApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clicher.clicherLikeApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

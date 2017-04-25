@@ -1,0 +1,16 @@
+/* 
+  localized.strings
+  clicherLikeApp
+
+  Created by Julien Chaumond on 25/04/2017.
+  Copyright © 2017 Clicher. All rights reserved.
+*/
+
+"AppTitle" = "SnapNoFilter";
+
+// HomeViewController
+"HomeViewControllerNumberPhotos" = "%d photos";
+
+// Toast
+"ToastMessageSavingPhotoComplete" = "La photo a bien été enregistrée dans votre album";
+"ToastTitleSavingPhoto" = "Enregistrement";
