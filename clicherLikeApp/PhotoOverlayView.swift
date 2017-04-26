@@ -56,6 +56,8 @@ class PhotoOverlayView: UIView {
                                    height: photoButtonSize.height)
     }
     
+    // MARK: - Button methods
+
     func clickPhotoButton() {
         delegate?.didClickOnPhotoButton(sender: self)
     }

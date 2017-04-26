@@ -72,13 +72,17 @@ class OnBoardingViewController: UIViewController, UIScrollViewDelegate {
         }
     }
     
-    func switchPage(sender: AnyObject) {
-        let offSetX = CGFloat(pageControl.currentPage) * scrollView.frame.width
-        scrollView.setContentOffset(CGPoint(x: offSetX, y: 0), animated: true)
-    }
-    
+    // MARK: - UIScrollViewDelegate methods
+
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         let pageNumber = round(scrollView.contentOffset.x / scrollView.frame.width)
         pageControl.currentPage = Int(pageNumber)
+    }
+    
+    // MARK: - Public methods
+
+    func switchPage(sender: AnyObject) {
+        let offSetX = CGFloat(pageControl.currentPage) * scrollView.frame.width
+        scrollView.setContentOffset(CGPoint(x: offSetX, y: 0), animated: true)
     }
 }

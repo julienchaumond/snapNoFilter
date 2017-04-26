@@ -89,6 +89,8 @@ class PhotosViewController: UIViewController, UICollectionViewDelegate, UICollec
         collectionView.contentInset = insets
     }
     
+    // MARK: - UICollectionViewDatasource methods
+
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return photos.count
     }
