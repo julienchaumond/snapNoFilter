@@ -9,6 +9,8 @@
 import UIKit
 import Photos
 
+// Class handling photo saving in album. 
+// Source: http://stackoverflow.com/questions/28708846/how-to-save-image-to-custom-album
 class PhotoSavingHandler {
     
     static let shared = PhotoSavingHandler()
